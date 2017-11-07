@@ -41,6 +41,7 @@
                 {
                     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
                 }
+                [pluginResult setKeepCallbackAsBool:YES];
                 [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
             }
         };
