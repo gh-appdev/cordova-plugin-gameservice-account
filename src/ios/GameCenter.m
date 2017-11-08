@@ -29,7 +29,7 @@
                     NSDictionary* user = @{
                         @"alias":localPlayer.alias,
                         @"displayName":localPlayer.displayName,
-                        @"playerID":localPlayer.playerID
+                        @"playerId":localPlayer.playerID
                     };
                     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:user];
                 }
